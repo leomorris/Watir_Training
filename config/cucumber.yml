@@ -1,0 +1,4 @@
+default: --profile chrome --profile html_report
+chrome: BROWSER_TYPE=chrome
+firefox: BROWSER_TYPE=firefox
+html_report: --format html --out report.html --format pretty

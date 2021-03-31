@@ -1,0 +1,7 @@
+---
+small_data_sim_plan:
+  plan_price: $15.00
+medium_data_sim_plan:
+  plan_price: $25.00
+large_data_sim_plan:
+  plan_price: $50.00

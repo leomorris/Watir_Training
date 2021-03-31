@@ -6,7 +6,7 @@ class OptusMobilePhonesPage < PageObject
     @page_url = 'https://www.optus.com.au/mobile/phones'
   end
 
-  def filter(filter_category, filter_value)
+  def filter_devices(filter_category, filter_value)
     @browser.label('aria-label': "Filter By: #{filter_category}.").click
     @browser.div('data-label': filter_value).click
   end

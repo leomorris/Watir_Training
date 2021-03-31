@@ -9,7 +9,8 @@ class PageObject
   end
 
   def wait_until_new_page_loads
-    @browser.wait_while {@browser.url == @page_url}
+    # Wait for Optus logo to be visible while page loads
+    @browser.img(alt: 'Optus Logo').wait_until(&:present?)
   end
 
 end
